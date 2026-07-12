@@ -3,7 +3,7 @@ export async function extractFormData(file: File) {
 
   formData.append("image", file);
 
-  const response = await fetch("http://localhost:5000/extract", {
+  const response = await fetch("https://sir-form-backend.onrender.com/extract", {
     method: "POST",
     body: formData,
   });
