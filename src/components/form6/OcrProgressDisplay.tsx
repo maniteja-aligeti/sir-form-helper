@@ -14,7 +14,7 @@ export function OcrProgressDisplay({
   className,
 }: OcrProgressDisplayProps) {
   const isActive =
-    progress.phase === 'preparing' || progress.phase === 'recognizing'
+    progress.phase === 'preparing' || progress.phase === 'processing'
   const isCompleted = progress.phase === 'completed'
 
   if (progress.phase === 'idle') {
