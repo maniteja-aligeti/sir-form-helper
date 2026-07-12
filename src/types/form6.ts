@@ -1,11 +1,27 @@
 export interface Form6Data {
   applicantName: string;
 
+  fatherName: string;
+
+  motherName: string;
+
+  spouseName: string;
+
   relationName: string;
 
-  relationship: "Father" | "Mother" | "Husband" | "Guardian" | "";
+  relationship:
+    | "Father"
+    | "Mother"
+    | "Husband"
+    | "Wife"
+    | "Guardian"
+    | "";
 
-  gender: "Male" | "Female" | "Other" | "";
+  gender:
+    | "Male"
+    | "Female"
+    | "Other"
+    | "";
 
   age: string;
 
@@ -44,6 +60,12 @@ export interface Form6Data {
 
 export const EMPTY_FORM6: Form6Data = {
   applicantName: "",
+
+  fatherName: "",
+
+  motherName: "",
+
+  spouseName: "",
 
   relationName: "",
 
